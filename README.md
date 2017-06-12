@@ -1,6 +1,6 @@
 # Drupal 8 Gulpfile
 
-![Drupal 8 Gulpfile](https://github.com/nicoladl/drupal-8-gulpfile/blob/develop/logo.jpg)
+![Drupal 8 Gulpfile](https://github.com/nicoladl/drupal-8-gulpfile/blob/master/logo.jpg)
 
 Starter Gulpfile for a Drupal 8 project
 
