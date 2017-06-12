@@ -26,15 +26,11 @@ Starter Gulpfile for a Drupal 8 project
 ```
 
 
-### docroot
-Drupal 8 index
+**docroot** contains Drupal 8 index.
 
-### script
-### config
-Drupal scripts and config folders
+**script** and ***config*** contians Drupal 8 scripts and config folders.
 
-### client
-Assets and gulpfile folders
+***client*** contains Assets and gulpfile folders.
 
 Gulpfile is placed in this folder and works with these assets. All compiled files is placed inside docroot folders
 
