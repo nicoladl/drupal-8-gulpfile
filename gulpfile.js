@@ -35,7 +35,7 @@ var printSuccess = function(task, message) {
 gutil.log(gutil.colors.white.bgGreen.bold(task), gutil.colors.green(message));
 };
 
-// task - sass - STATIC
+// task - sass
 gulp.task('sass', function () {
 
   return gulp.src(basePath + '/sass/**/*.scss')
@@ -56,36 +56,7 @@ gulp.task('sass', function () {
   .pipe(browserSync.stream());
 });
 
-// task - sass - DRUPAL
-gulp.task('sass-drupal', function () {
-
-return gulp.src(basePath + '/sass/**/*.scss')
-.pipe(sourcemaps.init())
-.pipe(sass.sync().on('error', sass.logError))
-.pipe(autoprefixer({
-  browsers: [
-    'last 2 versions',
-    'Safari >= 7',
-    'ie >= 11',
-    'iOS >= 8',
-    'Android >= 4.4'
-  ],
-  cascade: false
-}))
-.pipe(minifyCss({
-  compatibility: 'ie11',
-  level: {
-    1: {
-      specialComments: 0
-    }
-  }
-}))
-.pipe(sourcemaps.write('./'))
-.pipe(gulp.dest(docroot + '/css'))
-.pipe(browserSync.stream());
-});
-
-// Compile Js files.
+// task - js
 gulp.task('js', function(min) {
 
   var pathJsSrc = basePath + "/script";
@@ -102,7 +73,7 @@ gulp.task('js', function(min) {
   .pipe(gulp.dest(docroot + '/js'));
 });
 
-// task - bower vendors
+// task - vendors
 gulp.task('vendors', function() {
 
   var vendors = [
