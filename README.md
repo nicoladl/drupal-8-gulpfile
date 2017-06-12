@@ -6,6 +6,7 @@ Starter Gulpfile for a Drupal 8 project
 
 ## Folder structure
 
+```
 ├── docroot
 ├── script
 ├── config
@@ -22,6 +23,7 @@ Starter Gulpfile for a Drupal 8 project
     └── images
     └── gulpfile.js
     └── package.json
+```
 
 
 ### docroot
@@ -36,15 +38,17 @@ Assets and gulpfile folders
 
 Gulpfile is placed in this folder and works with these assets. All compiled files is placed inside docroot folders
 
+```
 └── docroot
     └── themes
         └── custom
             └── [THEME_NAME]
+```
 
 ## task
 
-'gulp watch'
+```gulp watch```
 compile assets and watch for new edit on these files
 
-'gulp default'
+```gulp default```
 compile assets
